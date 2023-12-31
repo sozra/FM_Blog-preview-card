@@ -19,6 +19,7 @@ inset: 0px; */
     margin: 0 auto;
     /* height: 600px; */
     width: 1440px;
+    min-height: 600px;
     background-color: var(--main-bg);
 
 }
@@ -35,6 +36,13 @@ inset: 0px; */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    transition: ease-in-out box-shadow .2s;
+}
+
+.card:has(.title:hover) {
+    /* background-color: skyblue; */
+    box-shadow: 16px 16px 0px 0px var(--Black), inset 0 0 0 1px black;
+    transition: ease-in-out box-shadow .2s;
 }
 
 .hero {
@@ -67,6 +75,14 @@ inset: 0px; */
     font-weight: 800;
     font-size: 24px;
     line-height: 150%;
+    width: fit-content;
+    transition: ease-in-out color .2s;
+}
+
+.title:hover {
+    color: var(--main-bg);
+    cursor: pointer;
+    transition: ease-in-out color .2s;
 }
 
 p {
