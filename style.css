@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --radius: 20px;
     --main-bg: hsl(47, 88%, 63%);
@@ -5,7 +11,8 @@
     --Grey: hsl(0, 0%, 50%);
     --Black: hsl(0, 0%, 7%);
     font-size: 16px;
-    font-family: figtree;
+    /* font-family: figtree; */
+    font-family: 'Figtree', sans-serif;
 }
 
 .ab-center {
@@ -13,12 +20,12 @@
     inset: 0px;
 }
 
-.container {
+body {
     /* position: absolute;
 inset: 0px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* height: 600px; */
-    width: 1440px;
+    /* width: 1440px; */
     min-height: 600px;
     background-color: var(--main-bg);
 
@@ -98,7 +105,7 @@ p {
     font-weight: lighter;
     margin-top: 12px;
     margin-bottom: 0px;
-    font-size: clamp(14px,2vw, 16px);
+    font-size: clamp(14px, 2vw, 16px);
 }
 
 .author {
